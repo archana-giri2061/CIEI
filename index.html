@@ -133,13 +133,31 @@
 </section>
 
 <!-- Call-to-Action Partnership Section -->
-<section class="cta-partnership">
-    <div class="cta-content">
-        <h2>Join Us in Shaping the Future!</h2>
-        <p>Partner with us to provide your students with innovative education in Robotics, AI, and Coding. Together, we can inspire the next generation of leaders and innovators.</p>
-        <a href="#contact" class="cta-btn">Become a Partner</a>
+ <!-- Become a Partner Button -->
+<div class="partner-button-container">
+    <h2>Join Us in Shaping the Future!</h2>
+    <p>Partner with us to provide your students with innovative education in Robotics, AI, and Coding. Together, we can inspire the next generation of leaders and innovators.</p>
+    <button id="partnerButton" class="partner-button">Become a Partner</button>
+</div>
+
+<!-- Modal for Partner Form -->
+<div id="partnerModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Become a Partner</h2>
+        <form id="partnerForm">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required placeholder="Your Email">
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
     </div>
-</section>
+</div>
 
 <!-- Footer Section -->
 <footer class="footer">

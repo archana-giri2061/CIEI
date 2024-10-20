@@ -414,58 +414,86 @@ body {
     }
 }
 
-/* Call-to-Action Partnership Section Styles */
-.cta-partnership {
-    background: linear-gradient(135deg, #ff5722, #ff9800); /* Gradient background */
-    color: white; /* White text for contrast */
-    text-align: center; /* Center text */
-    padding: 60px 20px; /* Padding for spacing */
+/* Become a Partner Button Styles */
+.partner-button-container {
+    text-align: center; /* Centering the button */
+    margin: 40px 0;
 }
 
-.cta-content h2 {
-    font-size: 2.5rem; /* Large heading */
-    margin-bottom: 20px; /* Space below heading */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+.partner-button {
+    background-color: #ff5722; /* Button color */
+    color: white; /* Text color */
+    padding: 15px 30px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.2rem; /* Font size */
+    cursor: pointer; /* Pointer on hover */
+    border: none; /* Remove border */
 }
 
-.cta-content p {
-    font-size: 1.2rem; /* Readable font size */
-    margin-bottom: 30px; /* Space below paragraph */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
 }
 
-.cta-btn {
-    background-color: #ffffff; /* White button */
-    color: #ff5722; /* Match text color with background */
-    padding: 15px 30px; /* Button padding */
-    text-decoration: none; /* Remove underline from link */
-    border-radius: 5px; /* Rounded corners for button */
-    font-size: 1.2rem; /* Font size for button */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Button shadow for depth */
-    border: 2px solid #ff5722; /* Border to match the button text color */
+.modal-content {
+    background-color: #f9f9f9; /* White background */
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888; /* Border */
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 10px; /* Rounded corners */
 }
 
-.cta-btn:hover {
-    background-color: #ff5722; /* Change to the main color on hover */
-    color: white; /* Change text color to white */
-    transform: translateY(-3px); /* Button lift effect */
+.close-button {
+    color: #aaa; /* Close button color */
+    float: right; /* Right aligned */
+    font-size: 28px; /* Large size */
+    font-weight: bold; /* Bold text */
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .cta-content h2 {
-        font-size: 2rem; /* Smaller font size for mobile */
-    }
+.close-button:hover,
+.close-button:focus {
+    color: black; /* Change color on hover */
+    text-decoration: none; /* No underline */
+    cursor: pointer; /* Pointer on hover */
+}
 
-    .cta-content p {
-        font-size: 1rem; /* Smaller font size for mobile */
-    }
+/* Form Styles */
+.form-group {
+    margin-bottom: 20px; /* Space between form groups */
+}
 
-    .cta-btn {
-        padding: 10px 20px; /* Smaller button padding for mobile */
-        font-size: 1rem; /* Smaller font size for mobile */
-    }
+.form-group label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+.form-group input {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding for inputs */
+    border: 1px solid #ddd; /* Border style */
+    border-radius: 5px; /* Rounded corners for inputs */
+}
+
+.submit-button {
+    background-color: #ff5722; /* Submit button color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer on hover */
+}
+
+.submit-button:hover {
+    background-color: #e64a19; /* Darker shade on hover */
 }
 
 /* Footer Styles */
